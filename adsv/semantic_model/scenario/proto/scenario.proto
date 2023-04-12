@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+import "adsv/semantic_model/static_scene/proto/static_scene.proto";
+import "adsv/semantic_model/scenario_configuration/proto/scenario_configuration.proto";
+
+package adsv.semantic_model.scenario;
+
+message Vector3 {
+  double x = 1;
+  double y = 2;
+  double z = 3;
+}
+
+message PhysicalState {
+  Vector3 position = 1;
+  Vector3 speed = 2;
+}
+
+message VehicleState {
+  string edge_id = 1;
+  int32 lane_order = 2;
+  double offset = 3;
+  double longitudinal_speed = 4;
+  double control_speed = 5;
+  double longitudinal_acceleration = 6;
+  double control_acceleration = 7;
+  int32 itinerary_index = 8;
+  bool at_stop_target = 9;
+  bool reached_destination = 10;
+  double target_speed = 11;
+  double turn = 12;
+  double target_turn = 13;
+  double lane_begin_offset = 14;
+  double lane_end_offset = 15;
+  PhysicalState physical_state = 16;
+}
+
+message VehicleStateSequence {
+  repeated VehicleState states = 1;
+}
+
+message TrafficLightState {
+  enum Color {
+    UNKNOWN = 0;
+    GREEN = 1;
+    YELLOW = 2;
+    RED = 3;
+  }
+  Color color = 1;
+}
+
+message TrafficLightStateSequence {
+  repeated TrafficLightState states = 1;
+}
+
+message DynamicScenario {
+  map<string, VehicleStateSequence> vehicles_state_sequence = 1;
+  map<string, TrafficLightStateSequence> traffic_lights_state_sequence = 2;
+}
+
+message Scenario {
+  adsv.semantic_model.scenario_configuration.ScenarioConfiguration scenario_configuration = 1;
+  adsv.semantic_model.static_scene.StaticScene static_scene = 2;
+  DynamicScenario dynamic_scenario = 3;
+}

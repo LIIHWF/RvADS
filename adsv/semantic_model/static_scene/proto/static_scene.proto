@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "adsv/semantic_model/metric_graph/proto/metric_graph.proto";
+
+package adsv.semantic_model.static_scene;
+
+enum SignalType {
+  TRAFFIC_LIGHT = 0;
+  STOP_SIGN = 1;
+}
+
+message SignalState {
+  string control_node_id = 1;
+}
+
+message Signal {
+  string id = 1;
+  SignalType signal_type = 2;
+  SignalState state = 3;
+}
+
+message StaticScene {
+  adsv.semantic_model.map.metric_graph.MetricGraph metric_graph = 1;
+  repeated Signal signals = 2;
+}
+

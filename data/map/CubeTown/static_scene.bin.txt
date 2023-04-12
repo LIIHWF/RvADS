@@ -1,0 +1,1031 @@
+metric_graph {
+  nodes {
+    id: "v0"
+    display_position {
+      x: 42.71272168384039
+      y: -3.2348046729043642
+    }
+  }
+  nodes {
+    id: "v1"
+    display_position {
+      x: 57.00112881356335
+      y: 11.052187428393331
+    }
+  }
+  nodes {
+    id: "v2"
+    display_position {
+      x: 50.2390678003158
+      y: -10.821289836667779
+    }
+  }
+  nodes {
+    id: "v3"
+    display_position {
+      x: 42.81142211927237
+      y: 3.5747417538112245
+    }
+  }
+  nodes {
+    id: "v4"
+    display_position {
+      x: -42.86239917378373
+      y: 3.2311793603161916
+    }
+  }
+  nodes {
+    id: "v5"
+    display_position {
+      x: -56.75241305839402
+      y: 10.525475758708454
+    }
+  }
+  nodes {
+    id: "v6"
+    display_position {
+      x: -56.45395407783951
+      y: -10.862100243333373
+    }
+  }
+  nodes {
+    id: "v7"
+    display_position {
+      x: 56.99968647193783
+      y: -10.75446380284913
+    }
+  }
+  nodes {
+    id: "v8"
+    display_position {
+      x: 50.22926811662612
+      y: 10.805128346851584
+    }
+  }
+  nodes {
+    id: "v9"
+    display_position {
+      x: -49.89342632039786
+      y: 10.778435036932493
+    }
+  }
+  nodes {
+    id: "v10"
+    display_position {
+      x: -42.69417042272736
+      y: -3.3768033885567443
+    }
+  }
+  nodes {
+    id: "v11"
+    display_position {
+      x: -50.15891481676576
+      y: -10.677098212962639
+    }
+  }
+  edges {
+    id: "e0"
+    source_id: "v0"
+    target_id: "v1"
+    length: 24.93161041717013
+    rj_type: JUNCTION
+    turn_type: LEFT_TURN
+    display_line {
+      vertices {
+        x: 42.71272168384039
+        y: -3.2348046729043642
+      }
+      vertices {
+        x: 49.24783706665039
+        y: -3.3708534240722656
+      }
+      vertices {
+        x: 53.745304107666016
+        y: -1.4113541841506958
+      }
+      vertices {
+        x: 56.77132034301758
+        y: 3.2940843105316153
+      }
+      vertices {
+        x: 57.00112881356335
+        y: 11.052187428393331
+      }
+    }
+  }
+  edges {
+    id: "e1"
+    source_id: "v0"
+    target_id: "v2"
+    length: 13.22681898081625
+    rj_type: JUNCTION
+    turn_type: RIGHT_TURN
+    display_line {
+      vertices {
+        x: 42.71272168384039
+        y: -3.2348046729043642
+      }
+      vertices {
+        x: 45.766353607177734
+        y: -3.340348720550537
+      }
+      vertices {
+        x: 49.10850524902344
+        y: -4.618250846862793
+      }
+      vertices {
+        x: 50.365501403808594
+        y: -7.596539020538329
+      }
+      vertices {
+        x: 50.2390678003158
+        y: -10.821289836667779
+      }
+    }
+  }
+  edges {
+    id: "e2"
+    source_id: "v3"
+    target_id: "v4"
+    length: 85.94174677730395
+    display_line {
+      vertices {
+        x: 42.81142211927237
+        y: 3.5747417538112245
+      }
+      vertices {
+        x: 20.340011596679688
+        y: 3.3700003623962402
+      }
+      vertices {
+        x: 0.6500029563903809
+        y: 3.3700003623962402
+      }
+      vertices {
+        x: -22.340015411376946
+        y: 3.3700003623962402
+      }
+      vertices {
+        x: -42.86239917378373
+        y: 3.2311793603161916
+      }
+    }
+  }
+  edges {
+    id: "e3"
+    source_id: "v5"
+    target_id: "v6"
+    length: 21.527054639494033
+    rj_type: JUNCTION
+    display_line {
+      vertices {
+        x: -56.75241305839402
+        y: 10.525475758708454
+      }
+      vertices {
+        x: -56.70000457763672
+        y: 5.659500598907471
+      }
+      vertices {
+        x: -56.70001220703125
+        y: 0.13999237120151609
+      }
+      vertices {
+        x: -56.70000457763672
+        y: -5.641868591308593
+      }
+      vertices {
+        x: -56.45395407783951
+        y: -10.862100243333373
+      }
+    }
+  }
+  edges {
+    id: "e4"
+    source_id: "v6"
+    target_id: "v7"
+    length: 188.1543557725876
+    display_line {
+      vertices {
+        x: -56.45395407783951
+        y: -10.862100243333373
+      }
+      vertices {
+        x: -56.93252182006836
+        y: -30.381282806396484
+      }
+      vertices {
+        x: -57.006282806396484
+        y: -35.8618049621582
+      }
+      vertices {
+        x: -56.00938034057617
+        y: -42.04143142700195
+      }
+      vertices {
+        x: -54.09535598754883
+        y: -47.02492141723633
+      }
+      vertices {
+        x: -50.38692855834961
+        y: -51.40664291381836
+      }
+      vertices {
+        x: -45.03084564208985
+        y: -55.10749435424804
+      }
+      vertices {
+        x: -39.587711334228516
+        y: -56.80561828613281
+      }
+      vertices {
+        x: -30.022270202636715
+        y: -57.0433464050293
+      }
+      vertices {
+        x: -13.03418731689452
+        y: -57.102256774902344
+      }
+      vertices {
+        x: 0.010757446289058947
+        y: -57.131675720214844
+      }
+      vertices {
+        x: 14.567729949951147
+        y: -57.101707458496094
+      }
+      vertices {
+        x: 26.9308338165283
+        y: -57.01252746582031
+      }
+      vertices {
+        x: 36.98138427734374
+        y: -57.01225662231445
+      }
+      vertices {
+        x: 43.53353500366211
+        y: -55.500362396240234
+      }
+      vertices {
+        x: 48.692211151123054
+        y: -52.328445434570305
+      }
+      vertices {
+        x: 52.93191146850586
+        y: -47.79294204711914
+      }
+      vertices {
+        x: 55.9263687133789
+        y: -41.123073577880874
+      }
+      vertices {
+        x: 57.053016662597656
+        y: -34.127105712890646
+      }
+      vertices {
+        x: 57.03609085083008
+        y: -24.260372161865224
+      }
+      vertices {
+        x: 56.99968647193783
+        y: -10.75446380284913
+      }
+    }
+  }
+  edges {
+    id: "e5"
+    source_id: "v1"
+    target_id: "v5"
+    length: 188.1102451750205
+    display_line {
+      vertices {
+        x: 57.00112881356335
+        y: 11.052187428393331
+      }
+      vertices {
+        x: 56.93814468383789
+        y: 27.243900299072266
+      }
+      vertices {
+        x: 57.006282806396484
+        y: 35.82180404663086
+      }
+      vertices {
+        x: 56.009376525878906
+        y: 42.00142669677734
+      }
+      vertices {
+        x: 54.09535217285156
+        y: 46.98491668701172
+      }
+      vertices {
+        x: 50.38692092895507
+        y: 51.366641998291016
+      }
+      vertices {
+        x: 45.030853271484375
+        y: 55.0674934387207
+      }
+      vertices {
+        x: 39.58770751953124
+        y: 56.7656135559082
+      }
+      vertices {
+        x: 30.02227020263672
+        y: 57.00334548950195
+      }
+      vertices {
+        x: 13.034187316894535
+        y: 57.062255859375
+      }
+      vertices {
+        x: -0.010757446289069605
+        y: 57.0916748046875
+      }
+      vertices {
+        x: -14.567726135253903
+        y: 57.06169891357422
+      }
+      vertices {
+        x: -26.930833816528306
+        y: 56.97252655029297
+      }
+      vertices {
+        x: -36.98138046264647
+        y: 56.972259521484375
+      }
+      vertices {
+        x: -43.53353118896482
+        y: 55.46035766601563
+      }
+      vertices {
+        x: -48.69221115112302
+        y: 52.28844451904299
+      }
+      vertices {
+        x: -52.9319152832031
+        y: 47.75295257568362
+      }
+      vertices {
+        x: -55.92636871337889
+        y: 41.08306503295902
+      }
+      vertices {
+        x: -57.053009033203125
+        y: 34.087097167968764
+      }
+      vertices {
+        x: -57.03609085083008
+        y: 24.220371246337912
+      }
+      vertices {
+        x: -56.75241305839402
+        y: 10.525475758708454
+      }
+    }
+  }
+  edges {
+    id: "e6"
+    source_id: "v7"
+    target_id: "v3"
+    length: 24.228898077635762
+    rj_type: JUNCTION
+    turn_type: LEFT_TURN
+    display_line {
+      vertices {
+        x: 56.99968647193783
+        y: -10.75446380284913
+      }
+      vertices {
+        x: 57.04368209838867
+        y: -5.023448467254639
+      }
+      vertices {
+        x: 54.71001052856445
+        y: 0.11253766715526581
+      }
+      vertices {
+        x: 49.710304260253906
+        y: 3.0628287792205806
+      }
+      vertices {
+        x: 42.81142211927237
+        y: 3.5747417538112245
+      }
+    }
+  }
+  edges {
+    id: "e7"
+    source_id: "v8"
+    target_id: "v3"
+    length: 13.600753856151655
+    rj_type: JUNCTION
+    turn_type: RIGHT_TURN
+    display_line {
+      vertices {
+        x: 50.22926811662612
+        y: 10.805128346851584
+      }
+      vertices {
+        x: 50.45124053955078
+        y: 6.801671504974365
+      }
+      vertices {
+        x: 49.28416061401367
+        y: 4.115732669830323
+      }
+      vertices {
+        x: 46.149566650390625
+        y: 3.520408868789673
+      }
+      vertices {
+        x: 42.81142211927237
+        y: 3.5747417538112245
+      }
+    }
+  }
+  edges {
+    id: "e8"
+    source_id: "v7"
+    target_id: "v1"
+    length: 21.939999766769233
+    rj_type: JUNCTION
+    display_line {
+      vertices {
+        x: 56.99968647193783
+        y: -10.75446380284913
+      }
+      vertices {
+        x: 57.00000762939453
+        y: -3.2811317443847656
+      }
+      vertices {
+        x: 57.00000762939453
+        y: 3.4788682460784894
+      }
+      vertices {
+        x: 57.00112881356335
+        y: 11.052187428393331
+      }
+    }
+  }
+  edges {
+    id: "e9"
+    source_id: "v4"
+    target_id: "v9"
+    length: 13.525392294429103
+    rj_type: JUNCTION
+    turn_type: RIGHT_TURN
+    display_line {
+      vertices {
+        x: -42.86239917378373
+        y: 3.2311793603161916
+      }
+      vertices {
+        x: -46.85023498535156
+        y: 3.0999627113342285
+      }
+      vertices {
+        x: -49.82548522949219
+        y: 4.850143909454345
+      }
+      vertices {
+        x: -50.11281967163086
+        y: 7.8297319412231445
+      }
+      vertices {
+        x: -49.89342632039786
+        y: 10.778435036932493
+      }
+    }
+  }
+  edges {
+    id: "e10"
+    source_id: "v8"
+    target_id: "v2"
+    length: 21.759829954922104
+    rj_type: JUNCTION
+    display_line {
+      vertices {
+        x: 50.22926811662612
+        y: 10.805128346851584
+      }
+      vertices {
+        x: 50.24000549316406
+        y: 3.6100075244903564
+      }
+      vertices {
+        x: 50.24000549316406
+        y: -3.629993200302123
+      }
+      vertices {
+        x: 50.2390678003158
+        y: -10.821289836667779
+      }
+    }
+  }
+  edges {
+    id: "e11"
+    source_id: "v5"
+    target_id: "v10"
+    length: 23.824473815800122
+    rj_type: JUNCTION
+    turn_type: LEFT_TURN
+    display_line {
+      vertices {
+        x: -56.75241305839402
+        y: 10.525475758708454
+      }
+      vertices {
+        x: -56.56260681152344
+        y: 3.984205722808838
+      }
+      vertices {
+        x: -54.24382781982422
+        y: -0.24914315342903137
+      }
+      vertices {
+        x: -49.48593521118164
+        y: -3.0482788085937496
+      }
+      vertices {
+        x: -42.69417042272736
+        y: -3.3768033885567443
+      }
+    }
+  }
+  edges {
+    id: "e12"
+    source_id: "v11"
+    target_id: "v9"
+    length: 21.59094280581531
+    rj_type: JUNCTION
+    display_line {
+      vertices {
+        x: -50.15891481676576
+        y: -10.677098212962639
+      }
+      vertices {
+        x: -50.09459686279297
+        y: -5.773664951324463
+      }
+      vertices {
+        x: -50.030006408691406
+        y: -0.39000678062438965
+      }
+      vertices {
+        x: -49.98715591430664
+        y: 3.1815230846405025
+      }
+      vertices {
+        x: -49.89342632039786
+        y: 10.778435036932493
+      }
+    }
+  }
+  edges {
+    id: "e13"
+    source_id: "v10"
+    target_id: "v0"
+    length: 85.67401149425831
+    display_line {
+      vertices {
+        x: -42.69417042272736
+        y: -3.3768033885567443
+      }
+      vertices {
+        x: -22.409942626953125
+        y: -3.2716474533081055
+      }
+      vertices {
+        x: 0.69000148773193
+        y: -3.321892738342285
+      }
+      vertices {
+        x: 20.09995651245116
+        y: -3.364109992980957
+      }
+      vertices {
+        x: 42.71272168384039
+        y: -3.2348046729043642
+      }
+    }
+  }
+  edges {
+    id: "e14"
+    source_id: "v11"
+    target_id: "v10"
+    length: 12.196760098673229
+    rj_type: JUNCTION
+    turn_type: RIGHT_TURN
+    display_line {
+      vertices {
+        x: -50.15891481676576
+        y: -10.677098212962639
+      }
+      vertices {
+        x: -49.63138961791992
+        y: -7.468474864959717
+      }
+      vertices {
+        x: -48.44401168823242
+        y: -4.967982769012451
+      }
+      vertices {
+        x: -45.799747467041016
+        y: -3.7359697818756104
+      }
+      vertices {
+        x: -42.69417042272736
+        y: -3.3768033885567443
+      }
+    }
+  }
+  edges {
+    id: "e15"
+    source_id: "v4"
+    target_id: "v6"
+    length: 23.554081639804096
+    rj_type: JUNCTION
+    turn_type: LEFT_TURN
+    display_line {
+      vertices {
+        x: -42.86239917378373
+        y: 3.2311793603161916
+      }
+      vertices {
+        x: -48.76264190673828
+        y: 3.0649142265319824
+      }
+      vertices {
+        x: -52.98811340332031
+        y: 0.9169520139694214
+      }
+      vertices {
+        x: -56.10653305053711
+        y: -3.4955520629882795
+      }
+      vertices {
+        x: -56.45395407783951
+        y: -10.862100243333373
+      }
+    }
+  }
+  edges {
+    id: "e16"
+    source_id: "v9"
+    target_id: "v8"
+    length: 167.17397921113678
+    display_line {
+      vertices {
+        x: -49.89342632039786
+        y: 10.778435036932493
+      }
+      vertices {
+        x: -49.971710205078125
+        y: 34.2932014465332
+      }
+      vertices {
+        x: -49.93019485473633
+        y: 39.15213394165039
+      }
+      vertices {
+        x: -47.94688415527344
+        y: 43.27675247192383
+      }
+      vertices {
+        x: -45.05121612548828
+        y: 46.80646133422851
+      }
+      vertices {
+        x: -41.71923828125001
+        y: 49.06707000732422
+      }
+      vertices {
+        x: -36.84026336669922
+        y: 50.018882751464844
+      }
+      vertices {
+        x: -26.92364692687989
+        y: 50.05839920043945
+      }
+      vertices {
+        x: -14.66647720336914
+        y: 50.01844787597656
+      }
+      vertices {
+        x: -0.02927017211913885
+        y: 50.05769729614258
+      }
+      vertices {
+        x: 13.06097793579102
+        y: 50.01795959472656
+      }
+      vertices {
+        x: 27.420581817626957
+        y: 50.01789855957031
+      }
+      vertices {
+        x: 38.289432525634766
+        y: 50.057518005371094
+      }
+      vertices {
+        x: 41.66122055053711
+        y: 49.066017150878906
+      }
+      vertices {
+        x: 44.83465194702149
+        y: 47.24178314208984
+      }
+      vertices {
+        x: 47.25437164306642
+        y: 44.981334686279276
+      }
+      vertices {
+        x: 49.23775100708008
+        y: 41.729465484619126
+      }
+      vertices {
+        x: 49.95179748535156
+        y: 35.78066253662108
+      }
+      vertices {
+        x: 50.03113555908203
+        y: 27.373031616210906
+      }
+      vertices {
+        x: 50.22926811662612
+        y: 10.805128346851584
+      }
+    }
+  }
+  edges {
+    id: "e17"
+    source_id: "v2"
+    target_id: "v11"
+    length: 167.339774508064
+    display_line {
+      vertices {
+        x: 50.2390678003158
+        y: -10.821289836667779
+      }
+      vertices {
+        x: 49.971710205078125
+        y: -34.33320236206055
+      }
+      vertices {
+        x: 49.93020248413086
+        y: -39.192134857177734
+      }
+      vertices {
+        x: 47.94688415527344
+        y: -43.31675338745117
+      }
+      vertices {
+        x: 45.05121612548828
+        y: -46.84646224975586
+      }
+      vertices {
+        x: 41.71923828125
+        y: -49.1070671081543
+      }
+      vertices {
+        x: 36.84026336669921
+        y: -50.05888366699219
+      }
+      vertices {
+        x: 26.92364883422852
+        y: -50.0984001159668
+      }
+      vertices {
+        x: 14.666477203369135
+        y: -50.058448791503906
+      }
+      vertices {
+        x: 0.029270172119135296
+        y: -50.097694396972656
+      }
+      vertices {
+        x: -13.060977935791014
+        y: -50.057960510253906
+      }
+      vertices {
+        x: -27.42058563232421
+        y: -50.05790328979492
+      }
+      vertices {
+        x: -38.28943634033203
+        y: -50.09751510620117
+      }
+      vertices {
+        x: -41.6612205505371
+        y: -49.10601806640625
+      }
+      vertices {
+        x: -44.834644317626946
+        y: -47.281784057617195
+      }
+      vertices {
+        x: -47.254371643066406
+        y: -45.02132797241211
+      }
+      vertices {
+        x: -49.23774719238281
+        y: -41.76946258544921
+      }
+      vertices {
+        x: -49.95178985595703
+        y: -35.82066345214842
+      }
+      vertices {
+        x: -50.036861419677734
+        y: -30.314388275146474
+      }
+      vertices {
+        x: -50.12940979003906
+        y: -20.285852432250962
+      }
+      vertices {
+        x: -50.15891481676576
+        y: -10.677098212962639
+      }
+    }
+  }
+  roads {
+    id: "R0"
+    edge_id_sequence: "e2"
+    entrance_id: "v3"
+    exit_id: "v4"
+  }
+  roads {
+    id: "R1"
+    edge_id_sequence: "e4"
+    entrance_id: "v6"
+    exit_id: "v7"
+  }
+  roads {
+    id: "R2"
+    edge_id_sequence: "e5"
+    entrance_id: "v1"
+    exit_id: "v5"
+  }
+  roads {
+    id: "R3"
+    edge_id_sequence: "e13"
+    entrance_id: "v10"
+    exit_id: "v0"
+  }
+  roads {
+    id: "R4"
+    edge_id_sequence: "e16"
+    entrance_id: "v9"
+    exit_id: "v8"
+  }
+  roads {
+    id: "R5"
+    edge_id_sequence: "e17"
+    entrance_id: "v2"
+    exit_id: "v11"
+  }
+  junctions {
+    id: "J0"
+    edges_id: "e0"
+    edges_id: "e7"
+    edges_id: "e10"
+    edges_id: "e1"
+    edges_id: "e6"
+    edges_id: "e8"
+    entrance_nodes_id: "v7"
+    entrance_nodes_id: "v0"
+    entrance_nodes_id: "v8"
+    exit_nodes_id: "v3"
+    exit_nodes_id: "v2"
+    exit_nodes_id: "v1"
+  }
+  junctions {
+    id: "J1"
+    edges_id: "e14"
+    edges_id: "e12"
+    edges_id: "e15"
+    edges_id: "e3"
+    edges_id: "e9"
+    edges_id: "e11"
+    entrance_nodes_id: "v4"
+    entrance_nodes_id: "v5"
+    entrance_nodes_id: "v11"
+    exit_nodes_id: "v10"
+    exit_nodes_id: "v9"
+    exit_nodes_id: "v6"
+  }
+  opposite_edges {
+    edge1_id: "e2"
+    edge2_id: "e13"
+  }
+  opposite_edges {
+    edge1_id: "e4"
+    edge2_id: "e17"
+  }
+  opposite_edges {
+    edge1_id: "e5"
+    edge2_id: "e16"
+  }
+  opposite_edges {
+    edge1_id: "e13"
+    edge2_id: "e2"
+  }
+  opposite_edges {
+    edge1_id: "e16"
+    edge2_id: "e5"
+  }
+  opposite_edges {
+    edge1_id: "e17"
+    edge2_id: "e4"
+  }
+  opposite_edges {
+    edge1_id: "e0"
+    edge2_id: "e7"
+  }
+  opposite_edges {
+    edge1_id: "e7"
+    edge2_id: "e0"
+  }
+  opposite_edges {
+    edge1_id: "e1"
+    edge2_id: "e6"
+  }
+  opposite_edges {
+    edge1_id: "e6"
+    edge2_id: "e1"
+  }
+  opposite_edges {
+    edge1_id: "e3"
+    edge2_id: "e12"
+  }
+  opposite_edges {
+    edge1_id: "e12"
+    edge2_id: "e3"
+  }
+  opposite_edges {
+    edge1_id: "e8"
+    edge2_id: "e10"
+  }
+  opposite_edges {
+    edge1_id: "e10"
+    edge2_id: "e8"
+  }
+  opposite_edges {
+    edge1_id: "e9"
+    edge2_id: "e11"
+  }
+  opposite_edges {
+    edge1_id: "e11"
+    edge2_id: "e9"
+  }
+  opposite_edges {
+    edge1_id: "e14"
+    edge2_id: "e15"
+  }
+  opposite_edges {
+    edge1_id: "e15"
+    edge2_id: "e14"
+  }
+}
+signals {
+  id: "traffic_light_0"
+  state {
+    control_node_id: "v7"
+  }
+}
+signals {
+  id: "traffic_light_1"
+  state {
+    control_node_id: "v0"
+  }
+}
+signals {
+  id: "traffic_light_2"
+  state {
+    control_node_id: "v8"
+  }
+}
+signals {
+  id: "stop_sign_0"
+  signal_type: STOP_SIGN
+  state {
+    control_node_id: "v4"
+  }
+}
+signals {
+  id: "stop_sign_1"
+  signal_type: STOP_SIGN
+  state {
+    control_node_id: "v11"
+  }
+}
+signals {
+  id: "stop_sign_2"
+  signal_type: STOP_SIGN
+  state {
+    control_node_id: "v5"
+  }
+}

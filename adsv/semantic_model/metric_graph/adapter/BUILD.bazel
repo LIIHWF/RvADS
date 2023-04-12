@@ -1,0 +1,26 @@
+py_library(
+    name = "node_edge_adapter",
+    srcs = ["node_edge_adapter.py"],
+    deps = [
+        "//adsv/geometry",
+        "//adsv/semantic_model/lane_map",
+        "//adsv/semantic_model/metric_graph",
+        "//adsv/utils",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "lane_map_adapter",
+    srcs = ["lane_map_adapter.py"],
+    deps = [
+        ":node_edge_adapter",
+    ],
+)
+
+py_library(
+    name = "adapter",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [":lane_map_adapter"],
+)

@@ -1,0 +1,17 @@
+* traffic-light: None
+- premise: False
+- formula: True
+# Time cost: 0.4032478332519531 s
+==============
+* right-turn-priority: None
+- premise: False
+- formula: True
+# Time cost: 0.5489881038665771 s
+==============
+* opposite-turn-priority: True
+- premise: True
+-- ♢[[[c0 @ en(J0.0)] ∧ [c1 @ en(J0.2)] ∧ NextTurnLeft(c0) ∧ ¬NextTurnLeft(c1)]]
+- formula: True
+# Time cost: 1.237764596939087 s
+==============
+# Total time cost: 2.190000534057617 s

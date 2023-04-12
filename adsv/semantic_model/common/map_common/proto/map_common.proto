@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package adsv.semantic_model.map;
+
+enum RJType {
+  ROAD = 0;
+  JUNCTION = 1;
+}
+
+enum TurnType {
+  NO_TURN = 0;
+  LEFT_TURN = 1;
+  RIGHT_TURN = 2;
+  U_TURN = 3;
+}

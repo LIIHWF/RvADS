@@ -1,0 +1,9 @@
+py_test(
+    name = "proto_test",
+    srcs = ["proto_test.py"],
+    data = ["//data/apollo_map"],
+    deps = [
+        "//adsv/semantic_model/lane_map",
+        "//adsv/semantic_model/lane_map/adapter",
+    ],
+)

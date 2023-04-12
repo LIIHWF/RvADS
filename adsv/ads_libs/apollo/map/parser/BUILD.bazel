@@ -1,0 +1,15 @@
+py_library(
+    name = "parser_lib",
+    srcs = ["parser.py"],
+    deps = [
+        "//adsv/ads_libs/apollo/map/proto:map_py_pb2",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "parser",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [":parser_lib"],
+)

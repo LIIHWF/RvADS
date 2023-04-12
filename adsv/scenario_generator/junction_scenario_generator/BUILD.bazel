@@ -1,0 +1,12 @@
+py_library(
+    name = "junction_scenario_generator_lib",
+    srcs = ["junction_scenario_generator.py"],
+    deps = ["//adsv/scenario_generator/scenario_pattern",],
+)
+
+py_library(
+    name = "junction_scenario_generator",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [":junction_scenario_generator_lib"],
+)

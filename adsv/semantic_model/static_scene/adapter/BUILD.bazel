@@ -1,0 +1,17 @@
+py_library(
+    name = "apollo_map_adapter",
+    srcs = ["apollo_map_adapter.py"],
+    deps = [
+        "//adsv/ads_libs/apollo/map/parser",
+        "//adsv/semantic_model/lane_map/adapter",
+        "//adsv/semantic_model/metric_graph/adapter",
+        "//adsv/semantic_model/static_scene",
+    ],
+)
+
+py_library(
+    name = "adapter",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [":apollo_map_adapter"],
+)

@@ -1,0 +1,12 @@
+
+py_library(
+    name = "types_lib",
+    srcs = ["types.py"],
+)
+
+py_library(
+    name = "types",
+    srcs = ["__init__.py"],
+    deps = ["types_lib"],
+    visibility = ["//visibility:public"]
+)

@@ -1,0 +1,27 @@
+* one-car-in-junction: True
+- premise: True
+-- ♢[[c0 @ J14]]
+-- ♢[[c1 @ J14]]
+-- ♢[[c2 @ J14]]
+-- ♢[[c3 @ J14]]
+- formula: True
+# Time cost: 0.32164907455444336 s
+==============
+* right-of-priority: False
+- premise: True
+-- ♢[[[c2 @ en(J14.0)] ∧ [c1 @ en(J14.3)] ∧ [wt(c2) = wt(c1)]]]
+-- ♢[[[c0 @ en(J14.1)] ∧ [c3 @ en(J14.2)] ∧ [wt(c0) = wt(c3)]]]
+-- ♢[[[c3 @ en(J14.2)] ∧ [c2 @ en(J14.0)] ∧ [wt(c3) = wt(c2)]]]
+-- ♢[[[c1 @ en(J14.3)] ∧ [c0 @ en(J14.1)] ∧ [wt(c1) = wt(c0)]]]
+- formula: False
+-- □[[[[c2 @ en(J14.0)] ∧ [c1 @ en(J14.3)] ∧ [wt(c2) = wt(c1)]] → [[N [c1 @ en(J14.3)]] U [c2 @ J14]]]]
+-- □[[[[c3 @ en(J14.2)] ∧ [c2 @ en(J14.0)] ∧ [wt(c3) = wt(c2)]] → [[N [c2 @ en(J14.0)]] U [c3 @ J14]]]]
+-- □[[[[c1 @ en(J14.3)] ∧ [c0 @ en(J14.1)] ∧ [wt(c1) = wt(c0)]] → [[N [c0 @ en(J14.1)]] U [c1 @ J14]]]]
+# Time cost: 0.7525100708007812 s
+==============
+* fifo-priority: None
+- premise: False
+- formula: True
+# Time cost: 0.9283614158630371 s
+==============
+# Total time cost: 2.0025205612182617 s

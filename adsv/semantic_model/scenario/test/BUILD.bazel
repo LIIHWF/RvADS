@@ -1,0 +1,11 @@
+py_test(
+    name = "proto_test",
+    srcs = ["proto_test.py"],
+    data = ["//data/map"],
+    deps = [
+        "//adsv/map_manager",
+        "//adsv/semantic_model/lane_map/adapter",
+        "//adsv/semantic_model/scenario/adapter",
+        "//adsv/semantic_model/static_scene/adapter",
+    ],
+)

@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package adsv.geometry;
+
+message Vertex {
+  double x = 1;
+  double y = 2;
+}
+
+message Vector {
+  double x = 1;
+  double y = 2;
+}
+
+message Radian {
+  double r = 1;
+}
+
+message LineSegment {
+  Vertex v1 = 1;
+  Vertex v2 = 2;
+}
+
+message Polyline {
+  repeated Vertex vertices = 1;
+}
+
+message RegionPolyline{
+  Polyline reference_line = 1;
+  Polyline left_boundary_line = 2;
+  Polyline right_boundary_line = 3;
+}

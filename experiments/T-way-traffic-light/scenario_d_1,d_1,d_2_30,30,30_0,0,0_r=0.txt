@@ -1,0 +1,17 @@
+* traffic-light: True
+- premise: True
+-- ♢[[[c2 @ en(J0.1)] ∧ TrafficLightColorConstraint(TrafficLightValue(traffic_light_1), TrafficLightColorValue(RED)) ∧ ¬NextTurnRight(c2)]]
+- formula: True
+# Time cost: 1.256465196609497 s
+==============
+* right-turn-priority: None
+- premise: False
+- formula: True
+# Time cost: 0.7231991291046143 s
+==============
+* opposite-turn-priority: None
+- premise: False
+- formula: True
+# Time cost: 0.5366733074188232 s
+==============
+# Total time cost: 2.5163376331329346 s

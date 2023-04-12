@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+import "adsv/semantic_model/common/map_common/proto/map_common.proto";
+import "adsv/geometry/proto/geometry.proto";
+
+package adsv.semantic_model.map.metric_graph;
+
+message Node {
+  string id = 1;
+  optional adsv.geometry.Vertex display_position = 2;
+}
+
+message Edge {
+  string id = 1;
+  string source_id = 2;
+  string target_id = 3;
+  double length = 4;
+  RJType rj_type = 5;
+  TurnType turn_type = 6;
+  optional adsv.geometry.Polyline display_line = 7;
+}
+
+message Road {
+  string id = 1;
+  repeated string edge_id_sequence = 2;
+  string entrance_id = 3;
+  string exit_id = 4;
+}
+
+message Junction {
+  string id = 1;
+  repeated string edges_id = 2;
+  repeated string entrance_nodes_id = 3;
+  repeated string exit_nodes_id = 4;
+}
+
+message OppositeEdge {
+  string edge1_id = 1;
+  string edge2_id = 2;
+}
+
+message MetricGraph {
+  repeated Node nodes = 1;
+  repeated Edge edges = 2;
+  repeated Road roads = 3;
+  repeated Junction junctions = 4;
+  repeated OppositeEdge opposite_edges = 5;
+}

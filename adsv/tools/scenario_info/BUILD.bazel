@@ -1,0 +1,35 @@
+py_binary(
+    name = "print_scenario",
+    srcs = ["print_scenario.py"],
+    data = ["//data/map"],
+    deps = [
+        "//adsv/map_manager",
+        "//adsv/semantic_model/metric_graph/tools:visualizer",
+        "//adsv/semantic_model/scenario",
+        "//adsv/tm2cl/automata:parser",
+    ],
+)
+
+py_binary(
+    name = "scenario_summary",
+    srcs = ["scenario_summary.py"],
+    data = ["//data/map"],
+    deps = [
+        "//adsv/map_manager",
+        "//adsv/semantic_model/metric_graph/tools:visualizer",
+        "//adsv/semantic_model/scenario",
+        "//adsv/tm2cl/automata:parser",
+    ],
+)
+
+py_binary(
+    name = "show_metric_graph",
+    srcs = ["show_metric_graph.py"],
+    data = ["//data/map"],
+    deps = [
+        "//adsv/map_manager",
+        "//adsv/semantic_model/metric_graph/tools:visualizer",
+        "//adsv/semantic_model/scenario",
+        "//adsv/tm2cl/automata:parser",
+    ],
+)

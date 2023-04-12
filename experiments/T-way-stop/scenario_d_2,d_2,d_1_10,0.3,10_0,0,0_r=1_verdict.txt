@@ -1,0 +1,20 @@
+* one-car-in-junction: True
+- premise: True
+-- ♢[[c1 @ J1]]
+-- ♢[[c2 @ J1]]
+-- ♢[[c0 @ J1]]
+- formula: True
+# Time cost: 0.5051124095916748 s
+==============
+* right-of-priority: True
+- premise: True
+-- ♢[[[c0 @ en(J1.0)] ∧ [c2 @ en(J1.2)] ∧ [wt(c0) = wt(c2)]]]
+- formula: True
+# Time cost: 1.183732032775879 s
+==============
+* fifo-priority: None
+- premise: False
+- formula: True
+# Time cost: 1.4104928970336914 s
+==============
+# Total time cost: 3.099337339401245 s

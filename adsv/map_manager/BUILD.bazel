@@ -1,0 +1,28 @@
+py_library(
+    name = "map_manager_lib",
+    srcs = ["map_info_loader.py"],
+    deps = [
+        ":map_manager_common",
+        "//adsv/ads_libs/apollo/map/parser",
+        "//adsv/semantic_model/lane_map",
+        "//adsv/semantic_model/lane_map:lane_map_py_pb2",
+        "//adsv/semantic_model/metric_graph",
+        "//adsv/semantic_model/static_scene",
+        "//adsv/semantic_model/static_scene:static_scene_py_pb2",
+        "//adsv/utils",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "map_manager",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [":map_manager_lib"],
+)
+
+py_library(
+    name = "map_manager_common",
+    srcs = ["common.py"],
+    visibility = ["//visibility:public"],
+)

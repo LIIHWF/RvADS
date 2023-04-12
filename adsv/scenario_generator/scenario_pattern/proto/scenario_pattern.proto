@@ -1,0 +1,11 @@
+syntax="proto3";
+
+
+package adsv.scenario_generator.scenario_pattern;
+
+
+message JunctionPattern {
+  string map_name = 1;
+  string junction_id = 2;
+}
+

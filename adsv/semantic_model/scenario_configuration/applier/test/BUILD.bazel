@@ -1,0 +1,11 @@
+py_binary(
+    name = "lgsvl_applier_test",
+    srcs = ["lgsvl_applier_test.py"],
+    data = ["//data/map"],
+    deps = [
+        "//adsv/map_manager",
+        "//adsv/semantic_model/scenario_configuration",
+        "//adsv/semantic_model/scenario_configuration/applier",
+        "//adsv/utils/types",
+    ],
+)

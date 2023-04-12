@@ -1,0 +1,32 @@
+load("@com_google_protobuf//:protobuf.bzl", "py_proto_library")
+
+py_proto_library(
+    name = "static_scene_py_pb2",
+    srcs = ["proto/static_scene.proto"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//adsv/geometry:geometry_py_pb2",
+        "//adsv/semantic_model/metric_graph:metric_graph_py_pb2",
+    ],
+)
+
+py_library(
+    name = "static_scene_lib",
+    srcs = [
+        "element/signal.py",
+        "static_scene.py",
+    ],
+    deps = [
+        ":static_scene_py_pb2",
+        "//adsv/semantic_model/metric_graph",
+        "//adsv/utils",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "static_scene",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [":static_scene_lib"],
+)

@@ -1,0 +1,43 @@
+load("@com_google_protobuf//:protobuf.bzl", "py_proto_library")
+
+py_proto_library(
+    name = "geometry_py_pb2",
+    srcs = ["proto/geometry.proto"],
+    visibility = ["//visibility:public"],
+)
+
+py_library(
+    name = "common",
+    srcs = ["common.py"],
+    deps = [],
+)
+
+py_library(
+    name = "basic",
+    srcs = glob([
+        "element/*.py",
+        "feature/*.py",
+    ]),
+    deps = [
+        ":geometry_py_pb2",
+        "//adsv/utils",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "structure",
+    srcs = glob(["structure/*.py"]),
+    deps = [":basic"],
+)
+
+py_library(
+    name = "geometry",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":basic",
+        ":common",
+        ":structure",
+    ],
+)

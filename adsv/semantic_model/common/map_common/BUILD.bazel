@@ -1,0 +1,20 @@
+load("@com_google_protobuf//:protobuf.bzl", "py_proto_library")
+
+py_proto_library(
+    name = "map_common_py_pb2",
+    srcs = ["proto/map_common.proto"],
+    visibility = ["//visibility:public"],
+)
+
+py_library(
+    name = "common_lib",
+    srcs = ["common.py"],
+    deps = [":map_common_py_pb2"],
+)
+
+py_library(
+    name = "common",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [":common_lib"],
+)

@@ -1,0 +1,21 @@
+* one-car-in-junction: False
+- premise: True
+-- ♢[[c1 @ J1]]
+-- ♢[[c0 @ J1]]
+-- ♢[[c2 @ J1]]
+- formula: False
+-- □[[[c1 @ J1] → ¬[c0 @ J1]]]
+-- □[[[c0 @ J1] → ¬[c1 @ J1]]]
+# Time cost: 0.33451271057128906 s
+==============
+* right-of-priority: None
+- premise: False
+- formula: True
+# Time cost: 0.36092138290405273 s
+==============
+* fifo-priority: None
+- premise: False
+- formula: True
+# Time cost: 1.0925102233886719 s
+==============
+# Total time cost: 1.7879443168640137 s

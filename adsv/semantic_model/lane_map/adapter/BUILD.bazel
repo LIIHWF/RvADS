@@ -1,0 +1,39 @@
+py_library(
+    name = "lane_cluster",
+    srcs = ["lane_cluster.py"],
+    deps = [
+        "//adsv/semantic_model/lane_map",
+        "//adsv/utils",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "lanes_adapter",
+    srcs = ["lanes_adapter.py"],
+    deps = [
+        ":lane_cluster",
+        "//adsv/geometry",
+        "//adsv/semantic_model/lane_map",
+        "//adsv/utils",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "apollo_map_adapter",
+    srcs = ["apollo_map_adapter.py"],
+    deps = [
+        ":lanes_adapter",
+        "//adsv/ads_libs/apollo/map/parser",
+    ],
+)
+
+py_library(
+    name = "adapter",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":apollo_map_adapter",
+    ],
+)

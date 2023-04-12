@@ -1,0 +1,6 @@
+py_library(
+    name = "visualizer",
+    srcs = ["visualizer.py"],
+    visibility = ["//visibility:public"],
+    deps = ["//adsv/semantic_model/lane_map"],
+)

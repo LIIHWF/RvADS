@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+import "adsv/geometry/proto/geometry.proto";
+import "adsv/semantic_model/common/map_common/proto/map_common.proto";
+
+package adsv.semantic_model.map.lane_map;
+
+message Lane {
+  enum BoundType {
+    DOTTED_WHITE = 0;
+    DOTTED_YELLOW = 1;
+    DOUBLE_YELLOW = 2;
+    SOLID_WHITE = 3;
+    SOLID_YELLOW = 4;
+    CURB = 5;
+    VIRTUAL = 6;
+  }
+  string id = 1;
+  repeated string predecessors_id = 2;
+  repeated string successors_id = 3;
+  optional string left_forward_neighbor_id = 4;
+  optional string right_forward_neighbor_id = 5;
+  optional string left_reverse_neighbor_id = 6;
+  optional string right_reverse_neighbor_id = 7;
+  BoundType left_boundary_type = 8;
+  BoundType right_boundary_type = 9;
+  adsv.semantic_model.map.RJType rj_type = 10;
+  adsv.semantic_model.map.TurnType turn_type = 11;
+  adsv.geometry.RegionPolyline region_polyline = 12;
+}
+
+message Section {
+  string id = 1;
+  optional string left_section_id = 2;
+  optional string right_section_id = 3;
+  adsv.geometry.Polyline reference_line = 4;
+  repeated Lane ordered_lanes = 5;
+}
+
+
+message LaneMap {
+  repeated Section sections = 1;
+}

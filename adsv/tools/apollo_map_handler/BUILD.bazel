@@ -1,0 +1,12 @@
+py_binary(
+    name = "apollo_map_handler",
+    srcs = ["apollo_map_handler.py"],
+    data = ["//data/apollo_map"],
+    deps = [
+        "//adsv/map_manager",
+        "//adsv/semantic_model/lane_map/adapter",
+        "//adsv/semantic_model/scenario/adapter",
+        "//adsv/semantic_model/static_scene/adapter",
+        "//adsv/utils",
+    ],
+)

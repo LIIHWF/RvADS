@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package apollo.hdmap;
+
+import "adsv/ads_libs/apollo/map/proto/map_id.proto";
+import "adsv/ads_libs/apollo/map/proto/map_geometry.proto";
+
+message SpeedBump {
+  optional Id id = 1;
+  repeated Id overlap_id = 2;
+  repeated Curve position = 3;
+}

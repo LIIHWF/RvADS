@@ -1,0 +1,4 @@
+Simulated time: 29.9999993294477
+Simulation time: 30.048607110977173
+Total time: 32.98489713668823
+Aggressions: {'c0': 1, 'c1': 1, 'c2': 1}

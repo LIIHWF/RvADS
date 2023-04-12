@@ -1,0 +1,9 @@
+py_library(
+    name = "scene_visualizer",
+    srcs = ["scene_visualizer.py"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//adsv/semantic_model/metric_graph/tools:visualizer",
+        "//adsv/semantic_model/scenario",
+    ],
+)

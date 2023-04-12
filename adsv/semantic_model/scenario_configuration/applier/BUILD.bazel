@@ -1,0 +1,45 @@
+py_library(
+    name = "lgsvl_applier_lib",
+    srcs = ["lgsvl/applier.py"],
+    deps = [
+        "//adsv/semantic_model/lane_map",
+        "//adsv/semantic_model/scenario",
+        "//adsv/semantic_model/scenario_configuration",
+        "//adsv/utils/sequence_solver",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "lgsvl_applier",
+    srcs = ["lgsvl/__init__.py"],
+    deps = [":lgsvl_applier_lib"],
+)
+
+py_library(
+    name = "lgsvl_apollo_applier_lib",
+    srcs = ["lgsvl_apollo/applier.py"],
+    deps = [
+        "//adsv/semantic_model/lane_map",
+        "//adsv/semantic_model/scenario",
+        "//adsv/semantic_model/scenario_configuration",
+        "//adsv/utils/sequence_solver",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "lgsvl_apollo_applier",
+    srcs = ["lgsvl_apollo/__init__.py"],
+    deps = [":lgsvl_apollo_applier_lib"],
+)
+
+py_library(
+    name = "applier",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":lgsvl_apollo_applier",
+        ":lgsvl_applier",
+    ],
+)

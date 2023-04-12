@@ -1,0 +1,24 @@
+load("@com_google_protobuf//:protobuf.bzl", "py_proto_library")
+
+py_proto_library(
+    name = "scenario_configuration_py_pb2",
+    srcs = ["proto/scenario_configuration.proto"],
+    visibility = ["//visibility:public"],
+    deps = [],
+)
+
+py_library(
+    name = "scenario_configuration_lib",
+    srcs = ["scenario_configuration.py"],
+    deps = [
+        ":scenario_configuration_py_pb2",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "scenario_configuration",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [":scenario_configuration_lib"],
+)

@@ -1,0 +1,5 @@
+filegroup(
+    name = "apollo_map",
+    srcs = glob(["*.bin"]),
+    visibility = ["//visibility:public"],
+)

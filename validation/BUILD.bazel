@@ -1,0 +1,23 @@
+py_binary(
+    name = "check",
+    srcs = ["check.py"],
+    data = ["//data/map"],
+    deps = [
+        "//adsv/map_manager",
+        "//adsv/monitor",
+        "//adsv/scenario_generator/junction_scenario_generator",
+        "//adsv/semantic_model/scenario_configuration",
+        "//adsv/tm2cl/tactic",
+    ],
+)
+
+py_binary(
+    name = "generate",
+    srcs = ["generate.py"],
+    data = ["//data/map"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//adsv/scenario_generator/junction_scenario_generator",
+        "//adsv/semantic_model/scenario_configuration/applier",
+    ],
+)

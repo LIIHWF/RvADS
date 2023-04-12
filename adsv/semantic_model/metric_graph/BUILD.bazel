@@ -1,0 +1,36 @@
+load("@com_google_protobuf//:protobuf.bzl", "py_proto_library")
+
+py_proto_library(
+    name = "metric_graph_py_pb2",
+    srcs = ["proto/metric_graph.proto"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//adsv/geometry:geometry_py_pb2",
+        "//adsv/semantic_model/common/map_common:map_common_py_pb2",
+    ],
+)
+
+py_library(
+    name = "metric_grpah_lib",
+    srcs = [
+        "element/edge.py",
+        "element/junction.py",
+        "element/node.py",
+        "element/road.py",
+        "metric_graph.py",
+    ],
+    deps = [
+        ":metric_graph_py_pb2",
+        "//adsv/geometry",
+        "//adsv/semantic_model/common/map_common:common",
+        "//adsv/utils",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "metric_graph",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [":metric_grpah_lib"],
+)

@@ -1,0 +1,28 @@
+py_library(
+    name = "tactic_lib",
+    srcs = [
+        "add_multi_operator.py",
+        "arithmetic_calculation.py",
+        "common.py",
+        "convert_to_automata.py",
+        "quantifier_expansion.py",
+        "record_evaluation.py",
+        "scenario_evaluation.py",
+        "static_scene_evaluation.py",
+        "tautology_elimination.py",
+    ],
+    deps = [
+        "//adsv/semantic_model/scenario",
+        "//adsv/tm2cl/ast",
+        "//adsv/tm2cl/ast:internal_node",
+        "//adsv/tm2cl/automata",
+        "//adsv/tm2cl/automata:parser",
+    ],
+)
+
+py_library(
+    name = "tactic",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [":tactic_lib"],
+)

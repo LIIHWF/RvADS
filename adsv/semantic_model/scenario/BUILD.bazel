@@ -1,0 +1,36 @@
+load("@com_google_protobuf//:protobuf.bzl", "py_proto_library")
+
+py_proto_library(
+    name = "scenario_py_pb2",
+    srcs = ["proto/scenario.proto"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//adsv/geometry:geometry_py_pb2",
+        "//adsv/semantic_model/scenario_configuration:scenario_configuration_py_pb2",
+        "//adsv/semantic_model/static_scene:static_scene_py_pb2",
+    ],
+)
+
+py_library(
+    name = "scenario_lib",
+    srcs = [
+        "element/dynamic_scenario.py",
+        "element/traffic_light.py",
+        "element/vehicle.py",
+        "scenario.py",
+    ],
+    deps = [
+        ":scenario_py_pb2",
+        "//adsv/semantic_model/scenario_configuration",
+        "//adsv/semantic_model/static_scene",
+        "//adsv/utils",
+        "//adsv/utils/types",
+    ],
+)
+
+py_library(
+    name = "scenario",
+    srcs = ["__init__.py"],
+    visibility = ["//visibility:public"],
+    deps = [":scenario_lib"],
+)

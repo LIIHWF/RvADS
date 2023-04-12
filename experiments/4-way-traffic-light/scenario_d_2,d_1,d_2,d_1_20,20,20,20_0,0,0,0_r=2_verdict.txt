@@ -1,0 +1,16 @@
+* traffic-light: None
+- premise: False
+- formula: True
+# Time cost: 0.4380779266357422 s
+==============
+* right-turn-priority: None
+- premise: False
+- formula: True
+# Time cost: 0.983278751373291 s
+==============
+* opposite-turn-priority: None
+- premise: False
+- formula: True
+# Time cost: 0.9363787174224854 s
+==============
+# Total time cost: 2.3577353954315186 s

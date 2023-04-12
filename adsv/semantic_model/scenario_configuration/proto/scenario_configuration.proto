@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package adsv.semantic_model.scenario_configuration;
+
+message Itinerary {
+    double start_offset = 1;
+    repeated string segment_ids = 2;
+    double end_offset = 3;
+}
+
+message VehicleConfiguration {
+    Itinerary itinerary = 1;
+    double init_speed = 2;
+}
+
+message ScenarioConfiguration {
+    string map_name = 1;
+    uint32 seed = 2;
+    map<string, VehicleConfiguration> vehicles_configuration = 3;
+    repeated string initialization_order = 4;
+    repeated string traffic_lights = 5;
+    double time_limit = 6;
+    double time_interval = 7;
+    bool reverse_traffic_lights = 8;
+}

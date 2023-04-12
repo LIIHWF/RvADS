@@ -1,0 +1,16 @@
+py_library(
+    name = "automata",
+    srcs = [
+        "automata.py",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [],
+)
+
+py_library(
+    name = "parser",
+    srcs = ["parser.py"],
+    data = ["//third-party/ltl2fsm:ltl2fsm_tools"],
+    visibility = ["//visibility:public"],
+    deps = [":automata"],
+)

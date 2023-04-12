@@ -1,0 +1,19 @@
+* traffic-light: None
+- premise: False
+- formula: True
+# Time cost: 0.39689040184020996 s
+==============
+* right-turn-priority: False
+- premise: True
+-- ♢[[[c1 @ en(J11.1)] ∧ [c0 @ en(J11.0)] ∧ TrafficLightColorConstraint(TrafficLightValue(traffic_light_180), TrafficLightColorValue(RED)) ∧ NextTurnRight(c1)]]
+-- ♢[[[c3 @ en(J11.3)] ∧ [c2 @ en(J11.2)] ∧ TrafficLightColorConstraint(TrafficLightValue(traffic_light_178), TrafficLightColorValue(RED)) ∧ NextTurnRight(c3)]]
+- formula: False
+-- □[[[[c3 @ en(J11.3)] ∧ [c2 @ en(J11.2)] ∧ TrafficLightColorConstraint(TrafficLightValue(traffic_light_178), TrafficLightColorValue(RED)) ∧ NextTurnRight(c3)] → [[N [c3 @ en(J11.3)]] U [c2 @ J11]]]]
+# Time cost: 2.399693727493286 s
+==============
+* opposite-turn-priority: None
+- premise: False
+- formula: True
+# Time cost: 0.8367950916290283 s
+==============
+# Total time cost: 3.6333792209625244 s
