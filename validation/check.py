@@ -10,11 +10,11 @@ from multiprocessing import Pool
 import argparse
 
 arg_parser = argparse.ArgumentParser('check')
-arg_parser.add_argument('RUNS_DIR', help='absolute path to simulated runs')
+arg_parser.add_argument('RUNS_DIR', help='absolute path to the simulated runs')
 arg_parser.add_argument('VERDICTS_DIR', help='absolute path to save the verdicts')
 arg_parser.add_argument('--type', choices=['stop_sign', 'traffic_light'], required=True,
                         help='type of the junction')
-arg_parser.add_argument('--way', help='way the junction', required=True, choices=['4', 'T'])
+arg_parser.add_argument('--way', help='way of the junction', required=True, choices=['4', 'T'])
 arg_parser.add_argument('--pool_size', default=1, type=int,
                         help='process pool size N (allow simultaneous checking of N runs, default=1)')
 
