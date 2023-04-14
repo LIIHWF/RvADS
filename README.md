@@ -74,9 +74,15 @@ Here is an instance of the verdict.
 **The average, minimal, and maximal time cost of property checking**
 (Note that the time cost of the property checking for the 4-way stop junction and traffic light junction cannot be compared with each other, as they have different simulation durations).
 
-<img src="experimental_results/images/time-summary.png" alt="average-time" style="zoom: 50%;" />
+<img src="experimental_results/images/time-summary.png" alt="average-time" style="width: 30%;" />
 
+**Discussion**
 
+RvADS first checks the applicability of a scenario against a property by validating its subformula. If the property is not applicable, RvADS returns NA result without validating the whole formula. Therefore, the time costs for NA cases are low.
+
+We can observe that for the same scenario, the time cost increases when a property involves more temporal operators and variables. That comes from the increased size of the unfolded formulas.
+
+Moreover, the number of simulation steps for scenarios with the traffic light junction is larger than that with the stop junction. This fact leads to the increased size of the constructed semantic model. Therefore, the time cost for scenarios with the traffic light junction is higher than that with the stop junction.
 
 ## Usage
 
